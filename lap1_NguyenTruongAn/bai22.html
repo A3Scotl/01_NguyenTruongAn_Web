@@ -106,20 +106,34 @@
             display:flex ;
             position: relative;
         }
-        .main .container .skip{
-            position: absolute;
+        .main .container .skip{            
             align-items:center;
             display: flex;
-            justify-content: space-between;
+            justify-content: end;
+            
+            width: 100%;
+            
+        }
+        .main .container .wrapper{
+           
+            margin-left: 5px;
             
         }
         .main .container .wrapper .text
         {
             margin-top: 20px;
             /* background-color: blue; */
-            width: 665px;
+            width: 655px;
             height: 900px;
             padding-bottom: 100%;
+            background-color: bisque;
+            margin-right: 5px;
+            
+        }
+        .main .container .wrapper .text .text_top{
+            background-color: aqua;
+            height: 300px;
+
         }
         .main .container .wrapper .news{
             margin-top: 20px;
@@ -127,6 +141,7 @@
             width: 605px;
             height: 900px;
             padding-bottom: 100%;
+            background-color: aquamarine;
         }
 
 
@@ -185,6 +200,12 @@
                 </div>
                 <div class="wrapper">
                     <div class="text">
+                        <div class="text_top">
+
+                        </div>
+                        <div class="text_bottom">
+
+                        </div>
                             
                     </div>
                     <div class="news">
