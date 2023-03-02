@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai 11</title>
     <style>
-        *{
-            margin: 0;
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+        .container{
+            background-color: azure;
+            width: 600px;
+            height: fit-content;
+            padding: 10px;
+            box-shadow: 5px 10px rgb(171, 167, 167);
         }
         img , h1 , p ,h2{
             margin: 15px 5px;
@@ -30,30 +39,32 @@
     </style>
 </head>
 <body>
-    <img src="anh2.png" alt="Anh beta">
-    <h1>About</h1>
-    <p>Drumbeat is an initiative that wants to keep the wep <b>open</b> and do it through <i>pratical projects and local events</i> that gathe smart creative people around big ideas solving problems and building the <b>open web</b></p>
-    <h2>Projects</h2>
-    <ul>
-        <li>Featured
-            <ul>
-                <li><a href="">School of Webcraft</a></li>
-                <li><a href="">Crisis Commons</a></li>
-            </ul>
-        </li>
-        <li>Latest
-            <ul>
-                <li><a href="">JessyInk</a></li>
-                <li><a href="">PrivarcyCamp</a></li>
-            </ul>
-        </li>
-    </ul>
-    <div class="link">
+    <div class="container">
+        <img src="./img/anh2.png" alt="Anh beta">
+        <h1>About</h1>
+        <p>Drumbeat is an initiative that wants to keep the wep <b>open</b> and do it through <i>pratical projects and local events</i> that gathe smart creative people around big ideas solving problems and building the <b>open web</b></p>
+        <h2>Projects</h2>
         <ul>
-            <li><a href="https://twitter.com/" title="Social Network">Twitter</a></li>
-            <li><a href="http://www.facebook.com/" title="Social Network">Facebook</a></li>
-            <li><a href="https://www.flickr.com/" title="Social Network">Flickr</a></li>
+         <li>Featured
+                <ul>
+                    <li><a href="">School of Webcraft</a></li>
+                    <li><a href="">Crisis Commons</a></li>
+                </ul>
+         </li>
+            <li>Latest
+             <ul>
+                   <li><a href="">JessyInk</a></li>
+                   <li><a href="">PrivarcyCamp</a></li>
+             </ul>
+            </li>
         </ul>
+        <div class="link">
+         <ul>
+             <li><a href="https://twitter.com/" title="Social Network">Twitter</a></li>
+             <li><a href="http://www.facebook.com/" title="Social Network">Facebook</a></li>
+                <li><a href="https://www.flickr.com/" title="Social Network">Flickr</a></li>
+         </ul>
+     </div>
     </div>
 </body>
 </html>

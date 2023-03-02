@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai14</title>
     <style>
-        .container div{
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: beige;
+        }
+        .container{
         
             display: flex;
+            flex-direction: column;
+            background-color:azure;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 5px 8px gainsboro;
         }
-       
+        .checkbox,.select,.email,.message{
+            display: flex;
+        }
         .container .email input{
             width: 200px;
             height: 20px;
