@@ -7,16 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai 4</title>
     <style>
-        .bottom {
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+        .container{
+            border: 1px solid grey;
+            box-shadow: 3px 2px orange;
+        }
+        .container .top{
+            background-color: rgb(226, 180, 120);
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+        .container .bottom {
             background-color: rgb(240, 195, 113);
-            margin-right: 50%;
-            padding-top: 10px;
+            margin-top: 0px;
+            padding:10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="top">
+    <div class="container">
+        <div class="top">
         <ol type="I">
             <li>Item one</li>
             <li>Item two</li>
@@ -32,7 +47,6 @@
             <li>Item five</li>
         </ol>
     </div>
-    <hr width="100%">
     <div class="bottom">
         <ol type="I">
             <li>Oakfield Middle School
@@ -126,6 +140,8 @@
                 </ol>
             </li>
         </ol>
+    </div>
+    </div>
     </div>
 </body>
 
