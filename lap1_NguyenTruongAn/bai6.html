@@ -52,17 +52,31 @@
         }
         /* b3 */
         .b .b3{
-            margin-top: 155px;         
+            margin-top: 160px;
+            margin-left: 50px;
+        }
+        .b .b3 .items {
+            padding: 2px;
+            display: grid;
+            grid-template-columns: repeat(2, 0.5fr);
+            grid-template-rows: repeat(3,0.5fr);
+            border: 1px solid black;
+        }
+        .item-1,.item-2,.item-3,.item-4,.item-5{
+            margin: 1px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .item-3 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+
+      
     
-        }
-        .b .b3 table{
-            width: 150px;
-            border: 1px solid black;
-            margin-left: 15px;
-        }
-        .b .b3 th{
-            border: 1px solid black;
-        }
         /* cau c */
         .c{
             background-color:orange ;
@@ -196,21 +210,13 @@
         </div>
         <div class="b3">
             <h2>Table with spanning row:</h2>
-            <table>
-                <tr>
-                    <th>6.470</th>
-                    <th>6.470</th>
-                </tr>
-                <tr>
-                    <th colspan="2">6.470</th>
-                    
-                </tr>
-                <tr>
-                    <th>6.470</th>
-                    <th>6.470</th>
-                </tr>
-            </table>
-            
+            <div class="items">
+                <div class="item-1"><b>6.047</b></div>
+                <div class="item-2"><b>6.047</b></div>
+                <div class="item-3"><b>6.047</b></div>
+                <div class="item-4"><b>6.047</b></div>
+                <div class="item-5"><b>6.047</b></div>
+            </div>
         </div>
     </div>
     <hr>
