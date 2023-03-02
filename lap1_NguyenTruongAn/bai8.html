@@ -5,9 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bai8</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+        div{
+            text-align: center;
+            border: 1px solid gray;
+            box-shadow: 5px 10px gray;
+            width: fit-content;
+            background-color:azure;
+        }
+    </style>
 </head>
 <body>
+   <div>
     <h2>HTML Image</h2>
-    <img src="" alt="">
+    <img src="./img/bai8.png" width="500" height="350" alt="My Palce" usemap="#imagemap">
+    <map name="planemap">
+        <area shape="rect" coords="254,214,298,298" href="A.htm" alt="Sun">
+        <area shape="circle" coords="58,82,40" href="B.htm" alt="Mercury">
+
+    </map>
+   </div>
 </body>
 </html>
