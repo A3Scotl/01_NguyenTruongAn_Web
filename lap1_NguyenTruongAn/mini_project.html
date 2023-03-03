@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini_project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./img/mini_project.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            width: 85%;
+            margin: auto;
+            align-items: center;
+    
+        }
+        .navbar p{
+            width: 120px;
+            font-size: 30px;
+            font-weight: 300;
+            font-style: italic;
+           
+        }
+        .navbar p a{
+            text-decoration: none;
+            color: azure;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .navbar p:hover a{
+            opacity:0.5;
+
+        }
+        .navbar ul{
+          
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            position: relative;
+            margin: 0 20px;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 0;
+            background: lightcoral;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.5s;
+        }
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: azure;
+            text-transform: uppercase;
+        }
+        .navbar ul li:hover a{
+            opacity: 0.8;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content .song{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 15px 0;
+        }
+        .content .song .singer{
+            color: white ;
+            opacity: 0.8;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .content .song .lyrics{
+            color: white ;
+            opacity: 0.75;
+            text-align: center;
+        }
+        .content .song .lyrics p{
+            padding: 5px 0;
+        }
+        button{
+            width: 200px;
+            font-weight: bold;
+            padding: 10px 0px;
+            margin: 20px 10px;
+            border-radius: 30px;
+            background: lightcoral;
+            color: azure;
+            border: 2px solid lightcoral;
+            cursor: pointer;   
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <p><a href="#">Aaa.aion</a></p>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">sign in</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="song">
+               <div class="singer">
+                <h1>SƠN TÙNG MTP</h1>
+               </div>
+               <hr width="600px">
+               <div class="lyrics">
+                <h2>CHÚNG TA CỦA HIỆN TẠI</h2>
+                <p>Mùa thu mang giấc mơ quay về</p>
+                <p>Vẫn nguyên vẹn như hôm nào</p>
+                <p>Lá bay theo gió xôn xao</p>
+                <p>Chốn xưa em chờ</p>
+                <p>Đoạn đường ngày nào hôm nay ta từng đón đưa</p>
+                <p>Còn vẫn vương không phai mờ</p>
+                <p>Dấu yêu thương trong vần thơ</p>              
+                <p>Chúng ta là áng mây bên trời vội vàng ngang qua...</p>
+               </div>
+            </div>
+            <div>
+                <button type="button">  READ MORE</button>
+            </div>
+               
+        </div>
+    </div>
+    
+    
+</body>
+</html>
