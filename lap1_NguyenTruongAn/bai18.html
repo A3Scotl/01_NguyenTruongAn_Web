@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .select{
+            width: fit-content;
+            box-shadow: 0 2px 10px black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            border-radius: 20px;
+            position: absolute;
+            margin-top: 40%;
+            background-color: azure;
+        }
+    </style>
+<body>
+    <form action="" method ="get" name ="frmInfo" class="select">
+        Please indicate your area of interest:<br>
+        <input type="text" id="txt_ide" list="ide" />
+	    <datalist id="ide">
+		    <option value="HTML" >
+		    <option value="CSS" >
+		    <option value="JS" >
+    		
+    	</datalist>
+    </form>
+</body>
+</html>
