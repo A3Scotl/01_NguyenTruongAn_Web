@@ -204,6 +204,10 @@
       }
       .products_list .products_list_item .img_card{
         position: relative;
+        cursor: pointer;
+      }
+      .products_list .products_list_item .img_card span:hover{
+        opacity: 0.8;
       }
       .products_list .products_list_item .img_card img{
         width: 100%;
@@ -236,6 +240,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        cursor: pointer;
       }
       .products_list .products_list_item .bottom a{
         font-size: 20px;
@@ -245,6 +250,10 @@
         color: green;
         border: 1px solid green;
         
+      }
+      .products_list .products_list_item .bottom:hover a{
+       color: #fff;
+       background-color: green;
       }
      
       .products_bottom{
@@ -279,6 +288,8 @@
       .products_bottom ul :hover a{
         background-color: aliceblue;
         color: green;
+        width: 45px;
+        
       }
     .footer{
         margin-top: 1050px;
@@ -315,6 +326,9 @@
     .footer .footer_left .footer_left_col ul{
         padding: 20px 0;
     }
+    .footer .footer_left .footer_left_col ul :hover a{
+        color: green;
+    }
     .footer .footer_left .footer_left_col .select{
         background: none;
         color: azure;
@@ -333,16 +347,20 @@
         padding: 10px 0;
         color: azure;
     }
+    .footer .footer_right .footer_right_row_2{
+        position: relative;
+    }
     .footer .footer_right .footer_right_row_2 input {
         position: relative;
         box-sizing: border-box;
         font-size: 20px;
     }
+    
     .footer .footer_right .footer_right_row_2 input[type = "text"]{
         background: none;
         outline: none;
         border: 0.1px solid lightcyan;
-        padding: 0 25px;
+        padding: 0 50px;
         border-radius: 10px 0 0 10px;
         height: 50px;
         color: azure;
@@ -362,6 +380,17 @@
         padding: 0 25px;
         margin-left: -5px;
     }
+    .footer .footer_right .footer_right_row_2 button{
+        position: absolute;
+        height:  50px;
+        width: 50px;
+        border: none;
+        background: none;
+        color: azure;
+        left: 0px;
+        
+        font-size: 15px;
+    } 
     .footer .footer_right .footer_right_row_3 i{
         font-size: 28px;
     }
@@ -380,6 +409,9 @@
         text-decoration: none;
         color: azure;
         padding: 0 20px;
+    }
+    .footer .footer_right .footer_right_row_4 ul :hover a{
+        color: green;
     }
    
     </style>
@@ -669,6 +701,7 @@
             <div class="footer_right_row_2">
                 <form action="">
                     <input type="text" placeholder="Input your email">
+                    <button><i class="fa-regular fa-envelope"></i></button>
                     <input type="submit" value="Subscribe">
                 </form>
             </div>
