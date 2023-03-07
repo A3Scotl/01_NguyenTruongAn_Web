@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+           
+            width: 100%;
+            height: 100%;
+        }
+        
+        .menu {
+            width: 100%;
+            height: 63px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .menu .menu_list {
+            display: flex;
+        }
+        
+        .menu .menu_list li {
+            list-style: none;
+        }
+        
+        .menu .menu_list li a {
+            text-decoration: none;
+            display: block;
+            padding: 23px 15px;
+            color: gray;
+        }
+        .menu .menu_list :hover a{
+            background-color: green;
+            color: azure;
+        }
+        
+        
+        .menu .menu_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        
+        .img_title img {
+            width: 100%;
+            height: 412px;
+        }
+       
+      
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menu_list">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Our story</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="menu_logo">
+            <a href=""><img src="./img/Image 1 (21).png" alt="Logo"></a>
+        </div>
+        <div class="menu_item">
+            <div class="menu_item_search">
+                <input type="text" placeholder="Search Products">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </div>
+            <a href="#"><img src="./img/Button 1 (1).png" alt=""></a>
+            <a href="#"><img src="./img/people.png" alt=""></a>
+        </div>
+    </div>
+    <div class="img_title">
+        <img src="./img/Image 1.png" alt="">
+    </div>
+
+    
+        
+</body>
+
+</html>
