@@ -59,12 +59,36 @@
             justify-content: center;
             align-items: center;
         }
+        .menu .menu_item .menu_item_search{
+        position: relative;
+    }
+        .menu .menu_item .menu_item_search input {
+        height:  38px;
+        width:  212px;
+        outline: none;
+        background: none;
+        border: 0.5px solid rgb(213, 209, 209);
+        padding-left: 30px;
+        font-size: 15px;
+        opacity: 0.5;
+        border-radius: 8px;
+    }
+    .menu .menu_item .menu_item_search button{
+        position: absolute;
+        height:  38px;
+        width: 38px;
+        border: none;
+        background:none;
+        left: 0px;
+        opacity: 0.5;
+        font-size: 15   px;
+    }
  
         .img_title{
             max-height: 413px;
             position: relative;
             display: flex;
-            
+            width: 100%;
         }
         .img_title .img_title_text{
             position: absolute;
@@ -72,7 +96,6 @@
             height: fit-content;
             left:140px;
             top: 110px;
-            
 
         }
         .img_title .img_title_text p{
@@ -123,10 +146,47 @@
         color: whitesmoke;
       }
       .products_header_right{
-        background-color: black;
+       
         height: 55px;
         width: 400px;
       }
+      .products .products_header .products_header_right{
+        position: relative;
+        display: flex;
+    }
+     .products .products_header .products_header_right input[type="text"] {
+        height:  38px;
+        width:  212px;
+        outline: none;
+        background: none;
+        border: none;
+        padding-left: 30px;
+        font-size: 15px;
+        opacity: 0.5;
+        border-radius: 8px 0 0 8px;
+        border-bottom: 1px solid gray;
+    }
+    .products .products_header .products_header_right input[type="submit"] {
+        height:  38px;
+        width:  fit-content;
+        outline: none;
+        padding: 0 15px ;
+        border: none;
+        padding-left: 30px;
+        font-size: 15px;
+        border-radius: 0 8px 8px 0;
+        cursor: pointer;
+    }
+    .products .products_header .products_header_right button{
+        position: absolute;
+        height:  38px;
+        width: 38px;
+        border: none;
+        background:none;
+        left: 0px;
+        opacity: 0.5;
+        font-size: 15px;
+    } 
       .products_list{
         display: grid;
         height: 1700px;
@@ -223,7 +283,7 @@
     .footer{
         margin-top: 1050px;
         background-color: black;
-        width: 1530px;
+        width: 100%;
         height: 460px;
         display: grid;
         grid-template-columns: 800px 730px;
@@ -321,11 +381,12 @@
         color: azure;
         padding: 0 20px;
     }
+   
     </style>
 </head>
 
 <body>
-<div>
+
     <div class="menu">
         <ul class="menu_list">
             <li><a href="#">Shop</a></li>
@@ -365,8 +426,9 @@
             </div>
             <div class="products_header_right">
                 <input type="text" placeholder="Search products">
-                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="button" value="Sort by">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>    
+                <input type="submit" value="Sort by =">
+
             </div>
         </div>
         <div class="products_list">
@@ -627,7 +689,7 @@
         </div>
     </div>
    
-</div>
+
 </body>
 
 </html>
