@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: grid;
+            grid-template-columns: 90px 1000px 495px;
+            grid-template-rows: 1440px;
+            font-family: sans-serif;
+        }
+        
+        .left {
+            background-color: #fff;
+            border-right: 1px solid #f3f3f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .left .left-top ul {
+            height: 540px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .left .left-top ul li,
+        .left .left-bottom ul li {
+            list-style: none;
+            width: fit-content;
+        }
+        
+        .left .left-top ul li img,
+        .left .left-bottom ul li img {
+            margin-top: 5px;
+            cursor: pointer;
+            width: 55px;
+            height: 55px;
+        }
+        
+        .left .left-top ul li a,
+        .left .left-bottom ul li a {
+            display: flex;
+            text-decoration: none;
+            color: gray;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+            border-radius: 5px;
+        }
+        
+        .left .left-top ul li a i,
+        .left .left-bottom ul li a i {
+            font-size: 30px;
+        }
+        
+        .left .left-bottom ul {
+            width: 100%;
+            height: 610px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+        }
+        
+        .cen {
+            margin-top: 37px;
+            background-color: #fff;
+            border-right: 1px solid #f3f3f4;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        
+        .cen .cen-row1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: fit-content;
+            width: 100%;
+        }
+        
+        .cen .cen-row1 .cen-row1-left {
+            font-size: 27px;
+            font-style: bold;
+            margin-left: 45px;
+        }
+        
+        .cen .cen-row1 .cen-row1-right {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-right: 45px;
+        }
+        
+        .cen .cen-row1 .cen-row1-right input {
+            width: 100px;
+            height: 40px;
+            background: none;
+            outline: none;
+            border: 1px solid red;
+            color: red;
+            border-radius: 30px;
+            cursor: pointer;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+        
+        .cen .cen-row1 .cen-row1-right i {
+            color: red;
+            position: absolute;
+            font-size: 13px;
+            left: 15px;
+        }
+        
+        .cen .cen-row2 {
+            height: 30px;
+            background-color: bisque;
+            margin: 0px 45px;
+        }
+        
+        .cen .cen-row3 {
+            height: 502px;
+            margin: 0px 45px;
+        }
+        
+        .cen .cen-row3 img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        
+        .cen .cen-row4 {
+            margin: 0px 45px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .cen .cen-row4 img {
+            width: 290px;
+            height: 175px;
+            border-radius: 10px;
+        }
+        
+        .cen .cen-row5 {
+            margin: 0px 45px;
+        }
+        
+        .cen .cen-row5 .cen-row5-option ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .cen .cen-row5 .cen-row5-option ul li {
+            list-style: none;
+            width: fit-content;
+        }
+        
+        .cen .cen-row5 .cen-row5-option ul li a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            width: 50px;
+            height: 45px;
+            align-items: center;
+            font-size: 15px;
+            color: #f3f3f4;
+            background-color: #9095a0;
+        }
+        
+        .cen .cen-row5 .cen-row5-option ul li input {
+            background: #f22128;
+            width: 135px;
+            height: 45px;
+            border: 1px solid #f22128;
+            color: #f3f3f4;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <div class="left-top">
+            <ul>
+                <li>
+                    <img src="./img/logo.png" alt="Logo">
+
+                </li>
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+        <div class="left-bottom">
+            <ul>
+                <li>
+                    <img src="./img/avatar 1322.png" alt="User">
+                </li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cen">
+        <div class="cen-row1">
+            <p class="cen-row1-left"><b>Meeting title</b></p>
+            <div class="cen-row1-right">
+                <input type="submit" value="12:00">
+                <i class="fa-solid fa-circle"></i>
+            </div>
+        </div>
+        <div class="cen-row2">
+
+        </div>
+        <div class="cen-row3">
+            <img src="./img/img_big.png" alt="">
+        </div>
+        <div class="cen-row4">
+            <div class="video1">
+                <img src="./img/img.png" alt="">
+            </div>
+            <div class="video2">
+                <img src="./img/img1.png" alt="">
+            </div>
+            <div class="video3">
+                <img src="./img/img2.png" alt="">
+            </div>
+        </div>
+        <div class="cen-row5">
+            <div class="cen-row5-option">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-microphone"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-video"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-volume-low"></i></a>
+                    </li>
+                    <li><input type="submit" value="End meeting"></li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-display"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-share-nodes"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right"></div>
+</body>
+
+</html>
