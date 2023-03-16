@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-    <title>Document</title>
+    <title>Aaa.aion</title>
     <style>
         * {
             margin: 0;
@@ -347,7 +347,13 @@
             background-color: #9095a0;
             border-radius: 7px;
         }
-        
+        .cen .cen-row5 .cen-row5-option ul li:hover a{
+            opacity: 0.8;
+        }
+        .cen .cen-row5 .cen-row5-option ul li:hover input{
+            font-size: 25px;
+            width: 150px;
+        }
         .cen .cen-row5 .cen-row5-option ul li input {
             background: #f22128;
             width: 135px;
@@ -357,6 +363,7 @@
             font-size: 17px;
             border-radius: 5px;
             cursor: pointer;
+            transition: 0.5s;
         }
         .right-container1,.right-container2,.right-container3,.right-container4{
             margin: 0px 35px;
@@ -386,6 +393,7 @@
             justify-content: center;
             width: 75px;
             height: 100%;
+            cursor: pointer;
            
         }
         .right .right-container1 .right-container1-right p{
@@ -444,18 +452,23 @@
             width: fit-content;
         }
         
+        .right .right-container4 {
+            position: relative;
+        }
         .right .right-container4 .right-container4-user{
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: 10px;
             margin-top: 30px;
+            position: absolute;
+            
+           
         }
         .right .right-container4 .right-container4-typing{
-            position: relative;
-            background-color: #f22128;
+           
         }
-        .right .right-container4 .right-container4-typing input{
+        .right .right-container4 .right-container4-typing input[type="text"]{
             width: 335px;
             height: 47px;
             padding-left: 15px;
@@ -464,11 +477,17 @@
             background: #f3f4f6;
             border: 1px solid #f3f4f6;
             border-radius: 5px;
+            position: absolute;
+            top: 55px;
+            z-index: -1;
            
            
         }
         .fa-face-smile{
             font-size: 20px;
+            position: absolute;
+            right:80px;
+            top: 68px;
            
             
         }
@@ -476,6 +495,15 @@
         margin: 35px 0px;
         background-color: #f3f3f4;
         width: 100%;
+       }
+       .send{
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        top: 63px;
+        cursor: pointer;
+        
        }
     </style>
 </head>
@@ -622,7 +650,7 @@
             <div class="right-container2-item">
                 <div class="right-container2-item-left">
                     <img src="./img/avatar 1323.png" alt="">
-                    <p>Benjamin Crawford</p>
+                    <p>Christian Scott</p>
                 </div>
                 <div class="right-container2-item-right">
                     <a href="#"><i class="fa-solid fa-microphone"></i></a>
@@ -633,7 +661,7 @@
             <div class="right-container2-item">
                 <div class="right-container2-item-left">
                     <img src="./img/avatar 1324.png" alt="">
-                    <p>Benjamin Crawford</p>
+                    <p>Deborah Chu</p>
                 </div>
                 <div class="right-container2-item-right">
                     <a href="#"><i class="fa-solid fa-microphone"></i></a>
@@ -644,7 +672,7 @@
             <div class="right-container2-item">
                 <div class="right-container2-item-left">
                     <img src="./img/avatar 1325.png" alt="">
-                    <p>Benjamin Crawford</p>
+                    <p>Jordan Nleves</p>
                 </div>
                 <div class="right-container2-item-right">
                     <a href="#"><i class="fa-solid fa-microphone"></i></a>
@@ -662,7 +690,7 @@
                 <div class="right-container3-mess-box_name">
                     <img src="./img/avatar 1326.png" alt="">
                     <p><b>Deborah Chu</b></p>
-                    <p style="color: #bbbec5;">1:12PM</p>
+                    <p style="color: #bbbec5; font-size: 13px;">1:12PM</p>
                 </div>
                 <div class="right-container3-mess-box_chat">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  
@@ -671,9 +699,9 @@
               </div>
               <div class="right-container3-mess-box">
                 <div class="right-container3-mess-box_name">
-                    <img src="./img/avatar 1326.png" alt="">
-                    <p><b>Deborah Chu</b></p>
-                    <p style="color: #bbbec5;">1:12PM</p>
+                    <img src="./img/avatar 1327.png" alt="">
+                    <p><b>Jordan Nleves</b></p>
+                    <p style="color: #bbbec5;font-size: 13px;">1:12PM</p>
                 </div>
                 <div class="right-container3-mess-box_chat">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  
@@ -682,9 +710,9 @@
               </div>
               <div class="right-container3-mess-box">
                 <div class="right-container3-mess-box_name">
-                    <img src="./img/avatar 1326.png" alt="">
-                    <p><b>Deborah Chu</b></p>
-                    <p style="color: #bbbec5;">1:12PM</p>
+                    <img src="./img/avatar 1328.png" alt="">
+                    <p><b>Benjamin Crawford</b></p>
+                    <p style="color: #bbbec5;font-size: 13px;">1:12PM</p>
                 </div>
                 <div class="right-container3-mess-box_chat box_chat3" style="background-color: #fdf2f4;">
                     <p>🥰🥰🥰  
@@ -701,7 +729,7 @@
             <div class="right-container4-typing">
                 <input type="text" placeholder="Add">
                 <i class="fa-solid fa-face-smile"></i>
-                <i class="fa-solid fa-paper-plane-top"></i>
+                <img class="send" src="./img/send.png" alt="">
             </div>
         </div>
 
