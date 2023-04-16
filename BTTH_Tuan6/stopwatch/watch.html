@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Đồng hồ điện tử</title>
+     <link rel="stylesheet" href="watch.css">
+ </head>
+ <body>
+        <div>
+            <span class="timer">
+                <span class="phut">00</span>
+                <span>:</span>
+                <span class="giay">00</span>
+                <span>:</span>
+                <span class="giaygiay">00</span>
+            </span>
+            <span class="btns">
+                <button class="btn_reset"> Reset</button>
+                <button class="btn_start"> Start</button>
+                <button class="btn_lap"> Lap</button>
+            </span>
+            <ol class="lapContainer"></ol>
+          
+        </div>
+ </body>
+ <script>
+        //StopWatch
+function Stopwatch(elem) {
+    var time = 0;
+    var offset;
+    var interval;
+
+    function lapOn() {
+        var lapTime = lapContainer.appendChild(document.createElement("li"))
+        lapTime.innerHTML = elem.textContent;
+        lapTime.classList = 'lapItem'
+    }
+
+    function lapOff() {
+        return;
+    }
+
+    function update() {
+        if (this.isOn) {
+            time += delta();
+        }
+        elem.textContent = timeFormatter(time);
+    }
+
+    function delta() {
+        var now = Date.now();
+        var timePassed = now - offset;
+
+        offset = now;
+ 
+        return timePassed;
+    }
+
+    function timeFormatter(time) {
+        time = new Date(time);
+
+        var hours = time.getUTCHours().toString();
+        var minutes = time.getMinutes().toString();
+        var seconds = time.getSeconds().toString();
+    
+        if (hours.length < 2 ) {
+            hours = '0' + hours;
+        }
+
+        if (minutes.length < 2) {
+            minutes = '0' + minutes;
+        }
+
+        while (seconds.length < 2) {
+            seconds = '0' + seconds;
+        }
+
+
+
+        var result = hours + " : "+minutes + ' : ' + seconds ;
+
+        return result;
+    }
+
+    this.start = function () {
+        interval = setInterval(update.bind(this), 1);
+        offset = Date.now();
+        this.isOn = true;
+    };
+
+    this.stop = function () {
+        clearInterval(interval);
+        interval = null;
+        this.isOn = false;
+    };
+
+    this.reset = function () {
+        time = 0;
+        lapContainer.innerHTML = '';
+        interval = null;
+        this.isOn = false;
+        update();
+    };
+
+    this.lapOn = function () {
+        lapOn();
+    }
+
+    this.lapOff = function () {
+        lapOff();
+    }
+
+    this.isOn = false;
+}
+
+//Main
+var timer = document.querySelector('.timer');
+var toggleBtn = document.querySelector('.btn_start');
+var resetBtn = document.querySelector('.btn_reset');
+var lapBtn = document.querySelector('.btn_lap');
+var lapContainer = document.querySelector('.lapContainer')
+
+var watch = new Stopwatch(timer);
+
+function start() {
+    toggleBtn.textContent = 'Stop';
+    toggleBtn.classList.toggle("on");
+    watch.start();
+}
+
+function stop() {
+    toggleBtn.textContent = 'Start';
+    toggleBtn.classList.toggle("on")
+    watch.stop();
+}
+
+function stopWhenOn() {
+    toggleBtn.textContent = 'Start';
+    toggleBtn.classList.toggle("on")
+    watch.stop();
+    watch.reset();
+}
+
+toggleBtn.addEventListener('click', function () {
+    watch.isOn ? stop() : start();
+});
+
+resetBtn.addEventListener('click', function () {
+    watch.isOn ? stopWhenOn() : watch.reset();
+    // stop();
+});
+
+lapBtn.addEventListener('click', function () {
+    watch.isOn ? watch.lapOn() : watch.lapOff();
+})
+ </script>
+ </html>

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, transparent,pink,red);
+    
+}
+.ctn{
+    width: 315px;
+    height: 505px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+.header,.display,.nut{
+    width: 100%;
+}
+.header{
+    height: 40px;
+}
+.display{
+    height: 150px;
+}
+.nut{
+    height: fit-content;
+    padding: 0 15px;
+}
